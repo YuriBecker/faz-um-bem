@@ -3,16 +3,16 @@ import {
   Image,
   Link,
   Text,
-  Tooltip,
+//  Tooltip,
   Grid,
   GridItem,
-  HStack,
+//  HStack,
   VStack,
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
 import blueLogo from "../../assets/images/logo.svg";
-import { FaFacebookSquare, FaInstagram, FaRegEnvelope } from "react-icons/fa";
+// import { FaFacebookSquare, FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import { ReactElement } from "react";
 
 function scrollToElement(element: string) {
@@ -34,7 +34,7 @@ export default function Footer(): ReactElement {
       >
         {isMobile ? (
           <>
-            <Box padding="0 20%">
+            {/* <Box padding="0 20%">
               <HStack spacing="24px">
                 <Box>
                   <Tooltip
@@ -82,7 +82,7 @@ export default function Footer(): ReactElement {
                   </Tooltip>
                 </Box>
               </HStack>
-            </Box>
+            </Box> */}
             <Box marginTop="25px" padding="25px 0" borderTop="2px solid">
               <VStack spacing="24px">
                 <Heading
@@ -160,7 +160,7 @@ export default function Footer(): ReactElement {
             templateRows="repeat(3, 33%)"
             templateColumns={isDesktop ? "repeat(7, 14.2%)" : "repeat(4, 25%)"}
           >
-            <GridItem rowSpan={1} colSpan={isDesktop ? 6 : 3}>
+          {/*   <GridItem rowSpan={1} colSpan={isDesktop ? 6 : 3}>
               <HStack spacing="24px">
                 <Box>
                   <Tooltip
@@ -218,8 +218,8 @@ export default function Footer(): ReactElement {
                   </Tooltip>
                 </Box>
               </HStack>
-              {/*}
-            <Flex flex-direction="row">
+              
+            {/<Flex flex-direction="row">
 
               <Text
                 height= "250px"
@@ -227,9 +227,8 @@ export default function Footer(): ReactElement {
                 marginLeft="auto"
                 mt={-5}
               />
-            </Flex>
-            */}
-            </GridItem>
+            </Flex>/}
+            </GridItem> */}
             <GridItem rowSpan={3} colSpan={1}>
               <Box>
                 <Image
