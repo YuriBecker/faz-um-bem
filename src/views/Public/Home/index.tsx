@@ -199,7 +199,7 @@ export default function Home() {
           >
 
             {inst_list.map((institute: any = []) => (
-              <Box key={institute.id}>
+              <Box key={institute.idUser}>
                 <Box className={instituteStyle["card"]}>
                   <Box className={instituteStyle["card-image"]}>
                     <Image src={institute.image} />

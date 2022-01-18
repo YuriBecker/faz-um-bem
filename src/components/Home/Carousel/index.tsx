@@ -1,5 +1,4 @@
 import carouselStyle from "../../../css/Carousel.module.css";
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,7 +41,7 @@ export default function Carousel(listaCampanhas: Props) {
     <>
       <Slider {...settings} className={carouselStyle["carousel"]}>
         {listaCampanhas.campanhas.map((campanha: any = {}) => (
-          <Box className={carouselStyle["card-wrapper"]} key={campanha.id}
+          <Box className={carouselStyle["card-wrapper"]} key={campanha.idCampaign}
             maxWidth={(slides === 1) ? "40%" : ((slides === 2) ? "80%" : "100%")}>
             <Box
               className={carouselStyle["card"]}
@@ -100,7 +99,7 @@ export default function Carousel(listaCampanhas: Props) {
                         color: "white"
                       }}
                       as={RouterLink}
-                      to={`/institute/${campanha.user.idUser}`}
+                      to={`/institute/${campanha?.user?.idUser}`}
                       // onClick={() => history.push(`/institute/${campanha.user.idUser}`)}
                     />
                   </Tooltip>
